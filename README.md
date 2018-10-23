@@ -1,4 +1,4 @@
-# Hair-Salon Java App :haircut:
+# WildLife Tracker Java App :tiger2:
 
 ### By wesley Mbate
 
@@ -9,8 +9,7 @@ Before this proposal may be approved, they must complete an environmental impact
 This application allows Rangers to track wildlife sightings in the area, record them and ensure the animals are isolated to a safer zone.
 All with the help of a user-friendly interface and fast database.
 
-
- Here's the link to Live site :<  >
+ Here's the link to Live site :< https://dry-sands-80956.herokuapp.com/  >
 
 ### Prerequisites
 
@@ -54,7 +53,7 @@ All with the help of a user-friendly interface and fast database.
 
 
 ### BUGS
-The clients submit does not redirect to the display area of the specific stylist, If any other bugs are experienced contact via Email wesleymbate@gmail.com :mailbox: and the issue will be sorted.
+NO BUGS noted, If any are experienced contact via Email wesleymbate@gmail.com :mailbox: and the issue will be sorted.
 
 
 ### LICENSE
