@@ -1,0 +1,67 @@
+
+ <h2 id="h2">Ulinzi. Wild Life Tracker&nbsp
+ <img class="logo" src="images/Rhino.png"></h2>
+<div class="container">
+
+<div class="row">
+<div class="col-md-4">
+
+    <form class="text-center border border-light" action="/addAnimal" method="post">
+        <p class="h4 mb-4">Animal Spotted</p>
+        <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Animal Name" >
+        <input type="text" id="ranger" name="ranger" class="form-control mb-4" placeholder="Ranger's Name">
+        <input list="age-list"type="text" id="age" name="age" class="form-control mb-4" placeholder="Age eg:young">
+        <datalist id="age-list">
+            <option>NewBorn</option>
+            <option>Young</option>
+            <option>Adult</option>
+        </datalist>
+        <input type="text" id="location" name="location" class="form-control mb-4" placeholder="Location spotted">
+        <input list="health-list" type="text"  id="health" name="health" class="form-control mb-4" placeholder="Health">
+        <datalist id="health-list">
+            <option>Healthy</option>
+            <option>Okay</option>
+            <option>Ill</option>
+        </datalist>
+        <input list="status-list" type="text" id="status" name="status" class="form-control mb-4" placeholder="Status eg Endengared">
+        <datalist id="status-list">
+            <option>Endangered</option>
+            <option>Not Endangered</option>
+        </datalist>
+        <div class="d-flex justify-content-around">
+        </div>
+
+        <button class="btn btn-info " type="submit">Submit</button>
+    </form>
+</div>
+<div class="col-md-8">
+    <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Animal</th>
+              <th scope="col">Ranger</th>
+              <th scope="col">Age</th>
+              <th scope="col">Location</th>
+              <th scope="col">Health</th>
+              <th scope="col">Status</th>
+              <th scope="col">Time Spotted</th>
+            </tr>
+          </thead>
+          <tbody>
+               #foreach ($animal in $animals)
+            <tr>
+              <td>$animal.getName()</td>
+              <td>$animal.getRanger()</td>
+              <td>$animal.getAge()</td>
+              <td>$animal.getLocation()</td>
+              <td>$animal.getHealth()</td>
+              <td>$animal.getStatus()</td>
+              <td>$animal.getSpotted()</td>
+            </tr>
+            #end
+          </tbody>
+        </table>
+
+</div>
+</div>
+</div>
